@@ -1,0 +1,449 @@
+2026-07-08 21:20:00 [INFO] MongoDB Connected: ac-fbjmflt-shard-00-02.qfzue3v.mongodb.net
+2026-07-08 21:20:02 [INFO] ✓ Default admin created: admin_427f7634
+2026-07-08 21:20:02 [WARN]   ┌──────────────────────────────────────────────┐
+2026-07-08 21:20:02 [WARN]   │         ADMIN LOGIN CREDENTIALS              │
+2026-07-08 21:20:02 [WARN]   │  These were auto-generated. SAVE THEM NOW!   │
+2026-07-08 21:20:02 [WARN]   ├──────────────────────────────────────────────┤
+2026-07-08 21:20:02 [WARN]   │  Username: admin_427f7634                   │
+2026-07-08 21:20:02 [WARN]   │  Password: q_Y7_qaLkJ0QARVlY2eM0GU6RfC-wMAf │
+2026-07-08 21:20:02 [WARN]   │  Email:    admin@aixnova.com                │
+2026-07-08 21:20:02 [WARN]   ├──────────────────────────────────────────────┤
+2026-07-08 21:20:02 [WARN]   │  API Login: POST /api/auth/login             │
+2026-07-08 21:20:02 [WARN]   │  Dashboard: GET  /api/admin/dashboard        │
+2026-07-08 21:20:02 [WARN]   └──────────────────────────────────────────────┘
+2026-07-08 21:20:02 [WARN] To set custom credentials, add to server/.env:
+2026-07-08 21:20:02 [WARN]   ADMIN_USERNAME=yourname
+2026-07-08 21:20:02 [WARN]   ADMIN_PASSWORD=yourpass
+2026-07-08 21:20:02 [WARN]   ADMIN_EMAIL=youremail
+2026-07-08 21:20:56 [INFO] MongoDB Connected: ac-fbjmflt-shard-00-01.qfzue3v.mongodb.net
+2026-07-08 21:20:58 [INFO] Admin accounts found: 1
+2026-07-08 21:20:58 [INFO] Telegram bot initialized: @AIXNovaBot (ID: 8393268947)
+2026-07-08 21:20:58 [INFO] Telegram commands registered
+2026-07-08 21:20:58 [INFO] Telegram message handlers registered
+2026-07-08 21:20:58 [INFO] Telegram bot handlers registered
+2026-07-08 21:20:58 [INFO] ═══════════════════════════════════════════════
+2026-07-08 21:20:58 [INFO]   AIX Nova Bot Server
+2026-07-08 21:20:58 [INFO]   Environment: development
+2026-07-08 21:20:58 [INFO]   Port: 5000
+2026-07-08 21:20:58 [INFO]   MongoDB: Connected ✓
+2026-07-08 21:20:58 [INFO]   Telegram Bot: Online ✓
+2026-07-08 21:20:58 [INFO]   API: http://localhost:5000
+2026-07-08 21:20:58 [INFO]   Health: http://localhost:5000/health
+2026-07-08 21:20:58 [INFO] ═══════════════════════════════════════════════
+2026-07-08 21:21:51 [INFO] MongoDB Connected: ac-fbjmflt-shard-00-01.qfzue3v.mongodb.net
+2026-07-08 21:21:52 [INFO] Admin accounts found: 1
+2026-07-08 21:21:52 [INFO] Telegram bot initialized: @AIXNovaBot (ID: 8393268947)
+2026-07-08 21:21:52 [INFO] Telegram commands registered
+2026-07-08 21:21:52 [INFO] Telegram message handlers registered
+2026-07-08 21:21:52 [INFO] Telegram bot handlers registered
+2026-07-08 21:21:52 [INFO] ═══════════════════════════════════════════════
+2026-07-08 21:21:52 [INFO]   AIX Nova Bot Server
+2026-07-08 21:21:52 [INFO]   Environment: development
+2026-07-08 21:21:52 [INFO]   Port: 5000
+2026-07-08 21:21:52 [INFO]   MongoDB: Connected ✓
+2026-07-08 21:21:52 [INFO]   Telegram Bot: Online ✓
+2026-07-08 21:21:52 [INFO]   API: http://localhost:5000
+2026-07-08 21:21:52 [INFO]   Health: http://localhost:5000/health
+2026-07-08 21:21:52 [INFO] ═══════════════════════════════════════════════
+2026-07-08 21:22:12 [INFO] MongoDB Connected: ac-fbjmflt-shard-00-00.qfzue3v.mongodb.net
+2026-07-08 21:22:14 [INFO] Admin accounts found: 1
+2026-07-08 21:22:14 [ERROR] Start command error: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }
+MongoServerError: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }
+    at Connection.sendCommand (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\cmap\connection.js:306:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Connection.command (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\cmap\connection.js:334:26)
+    at async Server.command (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\sdam\server.js:194:29)
+    at async tryOperation (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\operations\execute_operation.js:213:32)
+    at async executeOperation (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.findOneAndUpdate (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\collection.js:544:16)
+    at async model.Query._findOneAndUpdate (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongoose\lib\query.js:3536:13)
+    at async model.Query.exec (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongoose\lib\query.js:4627:63)
+    at async Object.callback (C:\Users\User\Desktop\AIX Nova\server\telegram\commands.js:46:20)
+2026-07-08 21:22:14 [INFO] Telegram bot initialized: @AIXNovaBot (ID: 8393268947)
+2026-07-08 21:22:14 [INFO] Telegram commands registered
+2026-07-08 21:22:19 [ERROR] Start command error: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }
+MongoServerError: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }
+    at Connection.sendCommand (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\cmap\connection.js:306:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Connection.command (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\cmap\connection.js:334:26)
+    at async Server.command (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\sdam\server.js:194:29)
+    at async tryOperation (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\operations\execute_operation.js:213:32)
+    at async executeOperation (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.findOneAndUpdate (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\collection.js:544:16)
+    at async model.Query._findOneAndUpdate (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongoose\lib\query.js:3536:13)
+    at async model.Query.exec (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongoose\lib\query.js:4627:63)
+    at async Object.callback (C:\Users\User\Desktop\AIX Nova\server\telegram\commands.js:46:20)
+2026-07-08 21:22:22 [ERROR] Start command error: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }
+MongoServerError: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }
+    at Connection.sendCommand (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\cmap\connection.js:306:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Connection.command (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\cmap\connection.js:334:26)
+    at async Server.command (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\sdam\server.js:194:29)
+    at async tryOperation (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\operations\execute_operation.js:213:32)
+    at async executeOperation (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.findOneAndUpdate (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\collection.js:544:16)
+    at async model.Query._findOneAndUpdate (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongoose\lib\query.js:3536:13)
+    at async model.Query.exec (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongoose\lib\query.js:4627:63)
+    at async Object.callback (C:\Users\User\Desktop\AIX Nova\server\telegram\commands.js:46:20)
+2026-07-08 21:22:48 [INFO] MongoDB Connected: ac-fbjmflt-shard-00-01.qfzue3v.mongodb.net
+2026-07-08 21:22:49 [INFO] Admin accounts found: 1
+2026-07-08 21:22:50 [INFO] Telegram bot initialized: @AIXNovaBot (ID: 8393268947)
+2026-07-08 21:22:50 [INFO] Telegram commands registered
+2026-07-08 21:23:01 [ERROR] Start command error: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }
+MongoServerError: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }
+    at Connection.sendCommand (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\cmap\connection.js:306:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Connection.command (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\cmap\connection.js:334:26)
+    at async Server.command (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\sdam\server.js:194:29)
+    at async tryOperation (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\operations\execute_operation.js:213:32)
+    at async executeOperation (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.findOneAndUpdate (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\collection.js:544:16)
+    at async model.Query._findOneAndUpdate (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongoose\lib\query.js:3536:13)
+    at async model.Query.exec (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongoose\lib\query.js:4627:63)
+    at async Object.callback (C:\Users\User\Desktop\AIX Nova\server\telegram\commands.js:46:20)
+2026-07-08 21:23:04 [ERROR] Unhandled Rejection: ETELEGRAM: 400 Bad Request: can't parse entities: Character '(' is reserved and must be escaped with the preceding '\'
+Error: ETELEGRAM: 400 Bad Request: can't parse entities: Character '(' is reserved and must be escaped with the preceding '\'
+    at C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:316:15
+From previous event:
+    at Request.RP$exposed [as then] (C:\Users\User\Desktop\AIX Nova\server\node_modules\request-promise-core\lib\plumbing.js:145:61)
+    at TelegramBot._request (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:304:8)
+    at TelegramBot.sendMessage (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:970:17)
+    at Object.callback (C:\Users\User\Desktop\AIX Nova\server\telegram\commands.js:126:15)
+    at C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:727:15
+    at Array.some (<anonymous>)
+    at TelegramBot.processUpdate (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:713:35)
+    at C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+    at Array.forEach (<anonymous>)
+    at C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+    at process.processImmediate (node:internal/timers:504:21)
+From previous event:
+    at TelegramBotPolling._polling (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegramPolling.js:103:8)
+    at Timeout._onTimeout (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegramPolling.js:168:56)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-07-08 21:23:12 [ERROR] History command error: ETELEGRAM: 400 Bad Request: can't parse entities: Character '!' is reserved and must be escaped with the preceding '\'
+Error: ETELEGRAM: 400 Bad Request: can't parse entities: Character '!' is reserved and must be escaped with the preceding '\'
+    at C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:316:15
+    at process.processImmediate (node:internal/timers:504:21)
+From previous event:
+    at Request.RP$exposed [as then] (C:\Users\User\Desktop\AIX Nova\server\node_modules\request-promise-core\lib\plumbing.js:145:61)
+    at TelegramBot._request (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:304:8)
+    at TelegramBot.sendMessage (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:970:17)
+    at Object.callback (C:\Users\User\Desktop\AIX Nova\server\telegram\commands.js:185:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-08 21:23:20 [INFO] MongoDB Connected: ac-fbjmflt-shard-00-00.qfzue3v.mongodb.net
+2026-07-08 21:23:20 [INFO] Admin login: admin_427f7634 (super)
+2026-07-08 21:23:20 [HTTP] ::1 - - [08/Jul/2026:16:23:20 +0000] "POST /api/auth/login HTTP/1.1" 200 689 "-" "curl/8.17.0"
+2026-07-08 21:23:21 [INFO] Admin accounts found: 1
+2026-07-08 21:23:22 [INFO] Telegram bot initialized: @AIXNovaBot (ID: 8393268947)
+2026-07-08 21:23:22 [INFO] Telegram commands registered
+2026-07-08 21:23:37 [HTTP] ::1 - - [08/Jul/2026:16:23:37 +0000] "GET /api/admin/dashboard HTTP/1.1" 200 236 "-" "curl/8.17.0"
+2026-07-08 21:23:37 [HTTP] ::1 - - [08/Jul/2026:16:23:37 +0000] "GET /api/admin/bot-status HTTP/1.1" 200 1188 "-" "curl/8.17.0"
+2026-07-08 21:23:45 [ERROR] Start command error: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }
+MongoServerError: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }
+    at Connection.sendCommand (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\cmap\connection.js:306:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Connection.command (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\cmap\connection.js:334:26)
+    at async Server.command (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\sdam\server.js:194:29)
+    at async tryOperation (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\operations\execute_operation.js:213:32)
+    at async executeOperation (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.findOneAndUpdate (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\collection.js:544:16)
+    at async model.Query._findOneAndUpdate (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongoose\lib\query.js:3536:13)
+    at async model.Query.exec (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongoose\lib\query.js:4627:63)
+    at async Object.callback (C:\Users\User\Desktop\AIX Nova\server\telegram\commands.js:46:20)
+2026-07-08 21:24:06 [ERROR] POST /api/chat - 500: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }
+MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }
+    at InsertOneOperation.handleOk (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at tryOperation (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\operations\execute_operation.js:214:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async executeOperation (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.insertOne (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\collection.js:154:16)
+2026-07-08 21:24:06 [HTTP] ::1 - - [08/Jul/2026:16:24:06 +0000] "POST /api/chat HTTP/1.1" 409 834 "-" "curl/8.17.0"
+2026-07-08 21:24:06 [INFO] MongoDB Connected: ac-fbjmflt-shard-00-02.qfzue3v.mongodb.net
+2026-07-08 21:24:06 [HTTP] ::1 - - [08/Jul/2026:16:24:06 +0000] "GET /api/history?telegramId=123456789&limit=5 HTTP/1.1" 200 26 "-" "curl/8.17.0"
+2026-07-08 21:24:07 [INFO] Admin accounts found: 1
+2026-07-08 21:24:08 [INFO] Telegram bot initialized: @AIXNovaBot (ID: 8393268947)
+2026-07-08 21:24:08 [INFO] Telegram commands registered
+2026-07-08 21:24:22 [ERROR] Start command error: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }
+MongoServerError: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }
+    at Connection.sendCommand (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\cmap\connection.js:306:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Connection.command (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\cmap\connection.js:334:26)
+    at async Server.command (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\sdam\server.js:194:29)
+    at async tryOperation (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\operations\execute_operation.js:213:32)
+    at async executeOperation (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.findOneAndUpdate (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\collection.js:544:16)
+    at async model.Query._findOneAndUpdate (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongoose\lib\query.js:3536:13)
+    at async model.Query.exec (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongoose\lib\query.js:4627:63)
+    at async Object.callback (C:\Users\User\Desktop\AIX Nova\server\telegram\commands.js:46:20)
+2026-07-08 21:24:43 [INFO] MongoDB Connected: ac-fbjmflt-shard-00-00.qfzue3v.mongodb.net
+2026-07-08 21:24:43 [ERROR] POST /api/chat - 500: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }
+MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }
+    at InsertOneOperation.handleOk (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at tryOperation (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\operations\execute_operation.js:214:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async executeOperation (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.insertOne (C:\Users\User\Desktop\AIX Nova\server\node_modules\mongodb\lib\collection.js:154:16)
+2026-07-08 21:24:43 [HTTP] ::1 - - [08/Jul/2026:16:24:43 +0000] "POST /api/chat HTTP/1.1" 409 834 "-" "curl/8.17.0"
+2026-07-08 21:24:43 [HTTP] ::1 - - [08/Jul/2026:16:24:43 +0000] "GET /api/history?telegramId=123456789&limit=5 HTTP/1.1" 200 26 "-" "curl/8.17.0"
+2026-07-08 21:24:44 [INFO] Admin accounts found: 1
+2026-07-08 21:24:44 [INFO] Telegram bot initialized: @AIXNovaBot (ID: 8393268947)
+2026-07-08 21:24:45 [INFO] Telegram commands registered
+2026-07-08 21:39:19 [INFO] MongoDB Connected: ac-fbjmflt-shard-00-02.qfzue3v.mongodb.net
+2026-07-08 21:39:20 [INFO] Admin accounts found: 1
+2026-07-08 21:39:20 [INFO] Telegram bot initialized: @AIXNovaBot (ID: 8393268947)
+2026-07-08 21:39:20 [INFO] Telegram commands registered
+2026-07-08 21:39:20 [INFO] Telegram message handlers registered
+2026-07-08 21:39:20 [INFO] Telegram bot handlers registered
+2026-07-08 21:39:20 [INFO] ═══════════════════════════════════════════════
+2026-07-08 21:39:20 [INFO]   AIX Nova Bot Server
+2026-07-08 21:39:20 [INFO]   Environment: development
+2026-07-08 21:39:20 [INFO]   Port: 5000
+2026-07-08 21:39:20 [INFO]   MongoDB: Connected ✓
+2026-07-08 21:39:20 [INFO]   Telegram Bot: Online ✓
+2026-07-08 21:39:20 [INFO]   API: http://localhost:5000
+2026-07-08 21:39:20 [INFO]   Health: http://localhost:5000/health
+2026-07-08 21:39:20 [INFO] ═══════════════════════════════════════════════
+2026-07-08 21:40:06 [INFO] MongoDB Connected: ac-fbjmflt-shard-00-00.qfzue3v.mongodb.net
+2026-07-08 21:40:07 [INFO] Admin accounts found: 1
+2026-07-08 21:40:08 [INFO] Telegram bot initialized: @AIXNovaBot (ID: 8393268947)
+2026-07-08 21:40:08 [INFO] Telegram commands registered
+2026-07-08 21:40:08 [INFO] Telegram message handlers registered
+2026-07-08 21:40:08 [INFO] Telegram bot handlers registered
+2026-07-08 21:40:08 [INFO] ═══════════════════════════════════════════════
+2026-07-08 21:40:08 [INFO]   AIX Nova Bot Server
+2026-07-08 21:40:08 [INFO]   Environment: development
+2026-07-08 21:40:08 [INFO]   Port: 5000
+2026-07-08 21:40:08 [INFO]   MongoDB: Connected ✓
+2026-07-08 21:40:08 [INFO]   Telegram Bot: Online ✓
+2026-07-08 21:40:08 [INFO]   API: http://localhost:5000
+2026-07-08 21:40:08 [INFO]   Health: http://localhost:5000/health
+2026-07-08 21:40:08 [INFO] ═══════════════════════════════════════════════
+2026-07-08 21:40:24 [INFO] MongoDB Connected: ac-fbjmflt-shard-00-00.qfzue3v.mongodb.net
+2026-07-08 21:40:25 [INFO] Admin accounts found: 1
+2026-07-08 21:40:25 [INFO] Telegram bot initialized: @AIXNovaBot (ID: 8393268947)
+2026-07-08 21:40:26 [INFO] Telegram commands registered
+2026-07-08 21:40:39 [ERROR] Start command error: ETELEGRAM: 400 Bad Request: can't parse entities: Character '!' is reserved and must be escaped with the preceding '\'
+Error: ETELEGRAM: 400 Bad Request: can't parse entities: Character '!' is reserved and must be escaped with the preceding '\'
+    at C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:316:15
+    at process.processImmediate (node:internal/timers:504:21)
+From previous event:
+    at Request.RP$exposed [as then] (C:\Users\User\Desktop\AIX Nova\server\node_modules\request-promise-core\lib\plumbing.js:145:61)
+    at TelegramBot._request (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:304:8)
+    at TelegramBot.sendMessage (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:970:17)
+    at Object.callback (C:\Users\User\Desktop\AIX Nova\server\telegram\commands.js:88:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-08 21:40:39 [ERROR] Start command stack:
+2026-07-08 21:41:10 [ERROR] Telegram polling error:
+2026-07-08 21:41:10 [ERROR] Polling error stack:
+2026-07-08 21:41:20 [ERROR] Start command error: ETELEGRAM: 400 Bad Request: can't parse entities: Character '!' is reserved and must be escaped with the preceding '\'
+Error: ETELEGRAM: 400 Bad Request: can't parse entities: Character '!' is reserved and must be escaped with the preceding '\'
+    at C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:316:15
+    at process.processImmediate (node:internal/timers:504:21)
+From previous event:
+    at Request.RP$exposed [as then] (C:\Users\User\Desktop\AIX Nova\server\node_modules\request-promise-core\lib\plumbing.js:145:61)
+    at TelegramBot._request (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:304:8)
+    at TelegramBot.sendMessage (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:970:17)
+    at Object.callback (C:\Users\User\Desktop\AIX Nova\server\telegram\commands.js:88:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-08 21:41:20 [ERROR] Start command stack:
+2026-07-08 21:42:43 [INFO] MongoDB Connected: ac-fbjmflt-shard-00-02.qfzue3v.mongodb.net
+2026-07-08 21:42:44 [INFO] Admin accounts found: 1
+2026-07-08 21:42:44 [INFO] Telegram bot initialized: @AIXNovaBot (ID: 8393268947)
+2026-07-08 21:42:44 [INFO] Telegram commands registered
+2026-07-08 21:42:44 [INFO] Telegram message handlers registered
+2026-07-08 21:42:44 [INFO] Telegram bot handlers registered
+2026-07-08 21:42:44 [INFO] ═══════════════════════════════════════════════
+2026-07-08 21:42:44 [INFO]   AIX Nova Bot Server
+2026-07-08 21:42:44 [INFO]   Environment: development
+2026-07-08 21:42:44 [INFO]   Port: 5000
+2026-07-08 21:42:44 [INFO]   MongoDB: Connected ✓
+2026-07-08 21:42:44 [INFO]   Telegram Bot: Online ✓
+2026-07-08 21:42:44 [INFO]   API: http://localhost:5000
+2026-07-08 21:42:44 [INFO]   Health: http://localhost:5000/health
+2026-07-08 21:42:44 [INFO] ═══════════════════════════════════════════════
+2026-07-08 21:42:46 [ERROR] Start command error: ETELEGRAM: 400 Bad Request: can't parse entities: Character '!' is reserved and must be escaped with the preceding '\'
+Error: ETELEGRAM: 400 Bad Request: can't parse entities: Character '!' is reserved and must be escaped with the preceding '\'
+    at C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:316:15
+    at process.processImmediate (node:internal/timers:504:21)
+From previous event:
+    at Request.RP$exposed [as then] (C:\Users\User\Desktop\AIX Nova\server\node_modules\request-promise-core\lib\plumbing.js:145:61)
+    at TelegramBot._request (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:304:8)
+    at TelegramBot.sendMessage (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:970:17)
+    at Object.callback (C:\Users\User\Desktop\AIX Nova\server\telegram\commands.js:88:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-08 21:42:46 [ERROR] Start command stack:
+2026-07-08 21:44:14 [INFO] MongoDB Connected: ac-fbjmflt-shard-00-02.qfzue3v.mongodb.net
+2026-07-08 21:44:15 [INFO] Admin accounts found: 1
+2026-07-08 21:44:15 [INFO] Telegram bot initialized: @AIXNovaBot (ID: 8393268947)
+2026-07-08 21:44:16 [INFO] Telegram commands registered
+2026-07-08 21:45:23 [ERROR] Start command error: ETELEGRAM: 400 Bad Request: can't parse entities: Character '!' is reserved and must be escaped with the preceding '\'
+Error: ETELEGRAM: 400 Bad Request: can't parse entities: Character '!' is reserved and must be escaped with the preceding '\'
+    at C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:316:15
+    at process.processImmediate (node:internal/timers:504:21)
+From previous event:
+    at Request.RP$exposed [as then] (C:\Users\User\Desktop\AIX Nova\server\node_modules\request-promise-core\lib\plumbing.js:145:61)
+    at TelegramBot._request (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:304:8)
+    at TelegramBot.sendMessage (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:970:17)
+    at Object.callback (C:\Users\User\Desktop\AIX Nova\server\telegram\commands.js:88:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-08 21:45:23 [ERROR] Start command stack:
+2026-07-08 21:45:33 [INFO] MongoDB Connected: ac-fbjmflt-shard-00-01.qfzue3v.mongodb.net
+2026-07-08 21:45:34 [INFO] Admin accounts found: 1
+2026-07-08 21:45:35 [INFO] Telegram bot initialized: @AIXNovaBot (ID: 8393268947)
+2026-07-08 21:45:35 [INFO] Telegram commands registered
+2026-07-08 21:45:35 [INFO] Telegram message handlers registered
+2026-07-08 21:45:35 [INFO] Telegram bot handlers registered
+2026-07-08 21:45:35 [INFO] ═══════════════════════════════════════════════
+2026-07-08 21:45:35 [INFO]   AIX Nova Bot Server
+2026-07-08 21:45:35 [INFO]   Environment: development
+2026-07-08 21:45:35 [INFO]   Port: 5000
+2026-07-08 21:45:35 [INFO]   MongoDB: Connected ✓
+2026-07-08 21:45:35 [INFO]   Telegram Bot: Online ✓
+2026-07-08 21:45:35 [INFO]   API: http://localhost:5000
+2026-07-08 21:45:35 [INFO]   Health: http://localhost:5000/health
+2026-07-08 21:45:35 [INFO] ═══════════════════════════════════════════════
+2026-07-08 21:46:02 [INFO] MongoDB Connected: ac-fbjmflt-shard-00-02.qfzue3v.mongodb.net
+2026-07-08 21:46:03 [INFO] Admin accounts found: 1
+2026-07-08 21:46:04 [INFO] Telegram bot initialized: @AIXNovaBot (ID: 8393268947)
+2026-07-08 21:46:04 [INFO] Telegram commands registered
+2026-07-08 21:46:56 [INFO] MongoDB Connected: ac-fbjmflt-shard-00-00.qfzue3v.mongodb.net
+2026-07-08 21:46:57 [INFO] Admin accounts found: 1
+2026-07-08 21:46:58 [INFO] Telegram bot initialized: @AIXNovaBot (ID: 8393268947)
+2026-07-08 21:46:58 [INFO] Telegram commands registered
+2026-07-08 21:46:58 [INFO] Telegram message handlers registered
+2026-07-08 21:46:58 [INFO] Telegram bot handlers registered
+2026-07-08 21:46:58 [INFO] ═══════════════════════════════════════════════
+2026-07-08 21:46:58 [INFO]   AIX Nova Bot Server
+2026-07-08 21:46:58 [INFO]   Environment: development
+2026-07-08 21:46:58 [INFO]   Port: 5000
+2026-07-08 21:46:58 [INFO]   MongoDB: Connected ✓
+2026-07-08 21:46:58 [INFO]   Telegram Bot: Online ✓
+2026-07-08 21:46:58 [INFO]   API: http://localhost:5000
+2026-07-08 21:46:58 [INFO]   Health: http://localhost:5000/health
+2026-07-08 21:46:58 [INFO] ═══════════════════════════════════════════════
+2026-07-08 21:47:21 [INFO] MongoDB Connected: ac-fbjmflt-shard-00-02.qfzue3v.mongodb.net
+2026-07-08 21:47:23 [INFO] Admin accounts found: 1
+2026-07-08 21:47:23 [INFO] Telegram bot initialized: @AIXNovaBot (ID: 8393268947)
+2026-07-08 21:47:23 [INFO] Telegram commands registered
+2026-07-08 21:47:52 [ERROR] Start command error: ETELEGRAM: 400 Bad Request: can't parse entities: Character '!' is reserved and must be escaped with the preceding '\'
+Error: ETELEGRAM: 400 Bad Request: can't parse entities: Character '!' is reserved and must be escaped with the preceding '\'
+    at C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:316:15
+    at process.processImmediate (node:internal/timers:504:21)
+From previous event:
+    at Request.RP$exposed [as then] (C:\Users\User\Desktop\AIX Nova\server\node_modules\request-promise-core\lib\plumbing.js:145:61)
+    at TelegramBot._request (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:304:8)
+    at TelegramBot.sendMessage (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:970:17)
+    at Object.callback (C:\Users\User\Desktop\AIX Nova\server\telegram\commands.js:88:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-08 21:47:52 [ERROR] Start command stack:
+2026-07-08 21:48:06 [ERROR] Start command error: ETELEGRAM: 400 Bad Request: can't parse entities: Character '!' is reserved and must be escaped with the preceding '\'
+Error: ETELEGRAM: 400 Bad Request: can't parse entities: Character '!' is reserved and must be escaped with the preceding '\'
+    at C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:316:15
+    at process.processImmediate (node:internal/timers:504:21)
+From previous event:
+    at Request.RP$exposed [as then] (C:\Users\User\Desktop\AIX Nova\server\node_modules\request-promise-core\lib\plumbing.js:145:61)
+    at TelegramBot._request (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:304:8)
+    at TelegramBot.sendMessage (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:970:17)
+    at Object.callback (C:\Users\User\Desktop\AIX Nova\server\telegram\commands.js:88:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-08 21:48:06 [ERROR] Start command stack:
+2026-07-08 21:48:12 [ERROR] Start command error: ETELEGRAM: 400 Bad Request: can't parse entities: Character '!' is reserved and must be escaped with the preceding '\'
+Error: ETELEGRAM: 400 Bad Request: can't parse entities: Character '!' is reserved and must be escaped with the preceding '\'
+    at C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:316:15
+    at process.processImmediate (node:internal/timers:504:21)
+From previous event:
+    at Request.RP$exposed [as then] (C:\Users\User\Desktop\AIX Nova\server\node_modules\request-promise-core\lib\plumbing.js:145:61)
+    at TelegramBot._request (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:304:8)
+    at TelegramBot.sendMessage (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:970:17)
+    at Object.callback (C:\Users\User\Desktop\AIX Nova\server\telegram\commands.js:88:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-08 21:48:12 [ERROR] Start command stack:
+2026-07-08 21:51:46 [ERROR] Start command error: ETELEGRAM: 400 Bad Request: can't parse entities: Character '!' is reserved and must be escaped with the preceding '\'
+Error: ETELEGRAM: 400 Bad Request: can't parse entities: Character '!' is reserved and must be escaped with the preceding '\'
+    at C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:316:15
+    at process.processImmediate (node:internal/timers:504:21)
+From previous event:
+    at Request.RP$exposed [as then] (C:\Users\User\Desktop\AIX Nova\server\node_modules\request-promise-core\lib\plumbing.js:145:61)
+    at TelegramBot._request (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:304:8)
+    at TelegramBot.sendMessage (C:\Users\User\Desktop\AIX Nova\server\node_modules\node-telegram-bot-api\src\telegram.js:970:17)
+    at Object.callback (C:\Users\User\Desktop\AIX Nova\server\telegram\commands.js:88:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-08 21:51:46 [ERROR] Start command stack:
+2026-07-08 21:57:22 [INFO] MongoDB Connected: ac-fbjmflt-shard-00-01.qfzue3v.mongodb.net
+2026-07-08 21:57:23 [INFO] Admin accounts found: 1
+2026-07-08 21:57:23 [INFO] Telegram bot initialized: @AIXNovaBot (ID: 8393268947)
+2026-07-08 21:57:23 [INFO] Telegram commands registered
+2026-07-08 21:57:23 [INFO] Telegram message handlers registered
+2026-07-08 21:57:23 [INFO] Telegram bot handlers registered
+2026-07-08 21:57:24 [INFO] ═══════════════════════════════════════════════
+2026-07-08 21:57:24 [INFO]   AIX Nova Bot Server
+2026-07-08 21:57:24 [INFO]   Environment: development
+2026-07-08 21:57:24 [INFO]   Port: 5000
+2026-07-08 21:57:24 [INFO]   MongoDB: Connected ✓
+2026-07-08 21:57:24 [INFO]   Telegram Bot: Online ✓
+2026-07-08 21:57:24 [INFO]   API: http://localhost:5000
+2026-07-08 21:57:24 [INFO]   Health: http://localhost:5000/health
+2026-07-08 21:57:24 [INFO] ═══════════════════════════════════════════════
+2026-07-08 21:57:36 [ERROR] sendSafe failed, sending as plain text. Error:
+2026-07-08 21:57:36 [ERROR] Failed text:
+2026-07-08 21:57:37 [INFO] User started bot: 6846717774 (@rust_lvl)
+2026-07-08 21:57:55 [WARN] OpenAI API attempt 1/3 failed:
+2026-07-08 21:57:58 [WARN] OpenAI API attempt 2/3 failed:
+2026-07-08 21:58:02 [WARN] OpenAI API attempt 3/3 failed:
+2026-07-08 21:58:02 [ERROR] OpenAI API all retries exhausted:
+2026-07-08 21:58:02 [ERROR] Telegram message handler error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+    at APIError.generate (C:\Users\User\Desktop\AIX Nova\server\node_modules\openai\error.js:63:20)
+    at OpenAI.makeStatusError (C:\Users\User\Desktop\AIX Nova\server\node_modules\openai\core.js:302:33)
+    at OpenAI.makeRequest (C:\Users\User\Desktop\AIX Nova\server\node_modules\openai\core.js:346:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async OpenAIService.generateResponse (C:\Users\User\Desktop\AIX Nova\server\services\openai.js:34:26)
+    at async handleTextMessage (C:\Users\User\Desktop\AIX Nova\server\telegram\handlers.js:183:22)
+    at async TelegramBot.<anonymous> (C:\Users\User\Desktop\AIX Nova\server\telegram\handlers.js:560:7)
+2026-07-08 21:58:02 [ERROR] Telegram message handler stack:
+2026-07-08 21:58:20 [ERROR] sendSafe failed, sending as plain text. Error:
+2026-07-08 21:58:20 [ERROR] Failed text:
+2026-07-08 21:58:20 [INFO] User started bot: 6846717774 (@rust_lvl)
+2026-07-08 21:58:32 [WARN] OpenAI API attempt 1/3 failed:
+2026-07-08 21:58:36 [WARN] OpenAI API attempt 2/3 failed:
+2026-07-08 21:58:40 [WARN] OpenAI API attempt 3/3 failed:
+2026-07-08 21:58:40 [ERROR] OpenAI API all retries exhausted:
+2026-07-08 21:58:40 [ERROR] Telegram message handler error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+    at APIError.generate (C:\Users\User\Desktop\AIX Nova\server\node_modules\openai\error.js:63:20)
+    at OpenAI.makeStatusError (C:\Users\User\Desktop\AIX Nova\server\node_modules\openai\core.js:302:33)
+    at OpenAI.makeRequest (C:\Users\User\Desktop\AIX Nova\server\node_modules\openai\core.js:346:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async OpenAIService.generateResponse (C:\Users\User\Desktop\AIX Nova\server\services\openai.js:34:26)
+    at async handleTextMessage (C:\Users\User\Desktop\AIX Nova\server\telegram\handlers.js:183:22)
+    at async TelegramBot.<anonymous> (C:\Users\User\Desktop\AIX Nova\server\telegram\handlers.js:560:7)
+2026-07-08 21:58:40 [ERROR] Telegram message handler stack:
+2026-07-08 22:05:13 [ERROR] sendSafe failed, sending as plain text. Error:
+2026-07-08 22:05:13 [ERROR] Failed text:
+2026-07-08 22:05:14 [INFO] User started bot: 6846717774 (@rust_lvl)
+2026-07-08 22:15:09 [INFO] MongoDB Connected: ac-fbjmflt-shard-00-01.qfzue3v.mongodb.net
+2026-07-08 22:15:11 [INFO] Admin accounts found: 1
+2026-07-08 22:15:11 [INFO] Telegram bot initialized: @AIXNovaBot (ID: 8393268947)
+2026-07-08 22:15:11 [INFO] Telegram commands registered
+2026-07-08 22:15:11 [INFO] Telegram message handlers registered
+2026-07-08 22:15:11 [INFO] Telegram bot handlers registered
+2026-07-08 22:15:11 [INFO] ═══════════════════════════════════════════════
+2026-07-08 22:15:11 [INFO]   AIX Nova Bot Server
+2026-07-08 22:15:11 [INFO]   Environment: development
+2026-07-08 22:15:11 [INFO]   Port: 5000
+2026-07-08 22:15:11 [INFO]   MongoDB: Connected ✓
+2026-07-08 22:15:11 [INFO]   Telegram Bot: Online ✓
+2026-07-08 22:15:11 [INFO]   API: http://localhost:5000
+2026-07-08 22:15:11 [INFO]   Health: http://localhost:5000/health
+2026-07-08 22:15:11 [INFO] ═══════════════════════════════════════════════
+2026-07-08 22:18:59 [ERROR] sendSafe failed, sending as plain text. Error:
+2026-07-08 22:18:59 [ERROR] Failed text:
+2026-07-08 22:18:59 [INFO] User started bot: 6846717774 (@rust_lvl)
+2026-07-08 22:19:11 [ERROR] OpenAI API error:
+2026-07-08 22:19:11 [ERROR] OpenAI error stack:
+2026-07-08 22:19:11 [ERROR] OpenAI non-retryable error (429): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2026-07-08 22:19:11 [ERROR] Telegram sendMessage error:
+2026-07-08 22:19:11 [ERROR] Telegram error code:
+2026-07-08 22:19:11 [ERROR] Telegram error stack:
+2026-07-08 22:19:11 [ERROR] Failed message preview:

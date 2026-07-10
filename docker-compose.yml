@@ -1,0 +1,62 @@
+# ============================================
+# AIX Nova Bot - Docker Compose
+# ============================================
+
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: aix-nova-bot
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+      - MONGODB_URI=${MONGODB_URI}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - JWT_SECRET=${JWT_SECRET}
+      - LOG_LEVEL=info
+      - CORS_ORIGINS=${CORS_ORIGINS:-*}
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - aix-nova-network
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # Uncomment if using a local MongoDB (instead of Atlas)
+  # mongodb:
+  #   image: mongo:7
+  #   container_name: aix-nova-mongodb
+  #   restart: unless-stopped
+  #   ports:
+  #     - "27017:27017"
+  #   environment:
+  #     MONGO_INITDB_ROOT_USERNAME: ${MONGO_USER:-admin}
+  #     MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD:-password}
+  #     MONGO_INITDB_DATABASE: aix_nova
+  #   volumes:
+  #     - mongodb_data:/data/db
+  #   networks:
+  #     - aix-nova-network
+
+networks:
+  aix-nova-network:
+    driver: bridge
+
+volumes:
+  mongodb_data:
